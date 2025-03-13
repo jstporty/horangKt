@@ -1,0 +1,17 @@
+
+
+spring:
+  datasource:
+    url: dbc:mysql://localhost:3306/horangKt?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # 개발 환경에서는 create-drop 또는 update를 사용하고 운영 환경에서는 validate 또는 none을 사용하세요.
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true # SQL 포맷팅 활성화
+        show_sql: true # SQL 로깅 활성화 (개발 환경에서만 사용)
+    open-in-view: false # LazyInitializationException 방지를 위해 false로 설정
