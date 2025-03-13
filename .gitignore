@@ -1,0 +1,38 @@
+# Kotlin
+.kotlinc/
+
+# Kotlin build output directory
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Android Studio (if applicable)
+.local.properties
+captures/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Maven build directory (if applicable)
+target/
+
+# JetBrains Rider (if applicable)
+.idea/
